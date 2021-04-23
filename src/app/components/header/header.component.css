@@ -1,0 +1,100 @@
+.header{
+    /* //we can do this later */
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+.header-top{
+    height: 60px;
+    background-color: #0F1111;
+    font-size: 14px;
+    display:flex;
+    color:white;
+    padding-right:8px;
+    padding-bottom: 8px;
+    
+}
+.header-menu {
+    display: flex;
+    padding: 10px 8px 8px 8px;
+    width: 100%;
+ 
+
+}
+.header-menu > div{
+    margin: 8px;
+}
+.header-menu-icon > span{
+    font-size: 30px;
+    align-items: center;   
+}
+.header-menu-searchbar{
+    display: flex;
+    margin-top: 8px;
+    height: 40px;
+    justify-content: center;
+    flex: 1;
+}
+.header-menu-input{
+    height: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header-menu-searchbar-icon{
+    background-color: #febd69;
+    height: 40px;
+    width: 40px;
+    color:black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header-menu-logo{
+    object-fit: contain;
+    width: 100px;
+    margin: 12px 20px 0px 2px;
+}
+
+
+.header-menu-signin{
+    display: flex;
+    flex-direction: column;
+}
+.header-menu-top-item{
+    font-size: 10px;
+    color: lightgray;
+}
+.header-menu-bottom-item{
+    font-size: 13px;
+    font-weight: 800;
+
+}
+.header-menu-cart{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
+    height: 50px;
+    justify-content: space-around;
+}
+.header-cart-number{
+    color: #febd69;
+    font-size: 25px;
+    font-weight: 800;
+}
+.header-bottom{
+    height: 49px;
+    background-image: none;
+    background-color: #232f3e;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    padding-left: 8px;
+    font-size: 12px;
+
+}
+.header-bottom-location-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
