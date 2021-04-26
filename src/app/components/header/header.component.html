@@ -1,10 +1,10 @@
 <div class="header">
     <nav class="header-top">
       <div class="header-menu">
-        <div class="header-menu-icon">
+        <div class="header-menu-icon" routerLink="/">
           <span class="material-icons">view_headline</span>
         </div>
-        <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" class="header-menu-logo" alt="">
+        <img routerLink="/" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" class="header-menu-logo" alt="">
         <div class="header-menu-searchbar">
           <input type="text" class="header-menu-input">
           <div class="header-menu-searchbar-icon">
@@ -27,9 +27,9 @@
             & Orders
           </span>
         </div>
-        <div class="header-menu-cart">
+        <div routerLink="/checkout" class="header-menu-cart">
           <span class="material-icons">shopping_cart</span>
-          <p class="header-cart-number">3</p>
+          <p class="header-cart-number">{{shoppingCart.getCartLenght()}}</p>
         </div>
       </div>
     </nav>

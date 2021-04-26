@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './components/products/products.component';
+import { CheckoutProductsComponent } from './components/checkout-products/checkout-products.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProductsComponent } from './components/products/products.component';
     LoginComponent,
     CheckoutComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    CheckoutProductsComponent
   ],
   imports: [
     BrowserModule,

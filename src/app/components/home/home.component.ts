@@ -9,7 +9,6 @@ import { ApiService } from 'src/app/services/api.service';
 export class HomeComponent implements OnInit {
 
   items: any[];
-  usuarios: any;
 
   constructor(private api: ApiService) { }
 
@@ -20,7 +19,7 @@ export class HomeComponent implements OnInit {
 
   getProducts(){
 
-    this.api.getJson().subscribe(response=>{
+    this.api.getJson().subscribe(response => {
       this.items = response
     })
   }
