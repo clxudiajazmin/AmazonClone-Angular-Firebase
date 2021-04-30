@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "clone-firebase-5c5e6": {
+      "hosting": {
+        "amazon-clone": [
+          "clone-firebase-5c5e6"
+        ]
+      }
+    }
+  }
+}

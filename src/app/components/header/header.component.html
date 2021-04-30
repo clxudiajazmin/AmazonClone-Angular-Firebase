@@ -11,8 +11,11 @@
             <span class="material-icons">search</span>
           </div>
         </div>
-        <div class="header-menu-signin">
-          <span class="header-menu-top-item">
+        <div  class="header-menu-signin">
+          <span (click) = "signOut()" class="header-menu-top-item" *ngIf = "auth.isLoggedIn()">
+            Hello, {{auth.getUser()}}
+          </span>
+          <span routerLink = "/login"  class="header-menu-top-item" *ngIf = "!auth.isLoggedIn()">
             Hello, Sign In
           </span>
           <span class="header-menu-bottom-item">

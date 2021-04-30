@@ -121,6 +121,10 @@
               "devServerTarget": "amazon-clone:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
