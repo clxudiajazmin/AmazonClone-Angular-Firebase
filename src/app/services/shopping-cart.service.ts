@@ -10,15 +10,17 @@ export class ShoppingCartService {
   constructor() { }
 
   addProduct = (product) => {
-    let items = this.shopping_cart_items
-
+    let items = this.getShoppingCartItems()
+    
     if(items){
       items.push(product)
       localStorage.setItem('shopping-cart', JSON.stringify(items))
+
     }else{
-      this.shopping_cart_items.push(product)
-      localStorage.setItem('shopping-cart', JSON.stringify(this.shopping_cart_items))
+      this.shopping_cart_items.push(product);
+       localStorage.setItem('shopping-cart', JSON.stringify(this.shopping_cart_items))
     }
+
     
   }
 
