@@ -8,14 +8,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
-import { CheckoutComponent } from './components/checkout/checkout.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './components/products/products.component';
 import { CheckoutProductsComponent } from './components/checkout-products/checkout-products.component';
+import { CheckoutSubtotalComponent } from './components/checkout-subtotal/checkout-subtotal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CheckoutProductsComponent } from './components/checkout-products/checko
     CheckoutComponent,
     FooterComponent,
     ProductsComponent,
-    CheckoutProductsComponent
+    CheckoutProductsComponent,
+    CheckoutSubtotalComponent
   ],
   imports: [
     BrowserModule,
